@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300;1,500&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+
+}
+body{
+   width: 100%;
+   height: 100%;
+   font-family: 'poppins';
+}
+
+
+
+.main-container {
+   width: 100%;
+   height: 160vh;
+   background: radial-gradient(934px at 6% 39.5%, rgb(255, 35, 90) 0.2%, rgb(255, 35, 144) 54.8%, rgb(250, 99, 160) 93.4%);
+   padding: 2rem 2rem;
+   position: relative;
+}
+.nav {
+  
+   width: 100%;
+   height: 60px;
+   background: #fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+}
+.logo {
+   height: 40px;
+   width: 40px;
+   padding-left: 10px;
+}
+.logo img{
+   height: 40px;
+   width: 40px;
+   filter: pink;
+}
+.search-bar {
+   height: 30px;
+   width: 140px;
+
+}
+.search-bar input{
+   height: 30px;
+   width: 340px;
+   border-radius: 20px;
+   padding: 15px;
+   border: none;
+   background-color: gainsboro;
+}
+.left-content {
+   height: 40px;
+   width: 240px;
+   display: flex;
+   padding: 10px;
+
+}
+.left-content button{
+   width: 20px;
+   border-radius: 50%;
+   border: none;
+   background: rgb(255, 35, 144);
+   color: white;
+   font-size: 9px;
+
+}
+.left-content .notification{
+   display: flex;
+   justify-content: space-between;
+   gap: 30px
+   ;
+   
+}
+
+
+.user {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  gap: 5px;
+
+
+}
+.user img{
+   height: 35px;
+   width: 35px;
+   border-radius: 50%;
+   padding-bottom: 8px;
+}
+.main-content{
+   width: 100%;
+   height: 100%;
+   position: relative;
+ 
+}
+.sidebar {
+   width: 240px;
+   background-color: black;
+   height: 139.4vh;
+   display: absolute;
+   
+}
+.sidebar .in-side{
+   width: 100%;
+   text-align: center;
+   padding: 20px 0px;
+
+   
+}
+.in-side ul{
+   list-style: none;
+   width: 100%;
+}
+.in-side ul li{
+   height: 45px;
+   margin: 20px 0px;
+   display: blo;
+   padding-top: 10px;
+   margin-right: 20px;
+}
+#active{
+   background-color: rgb(255, 35, 144);
+}
+.in-side ul li a{
+   text-decoration: none;
+   text-align: center;
+   color: #fff;
+   margin-top: 20px;
+   
+}
+
+
+
+#slider-container {
+   height: 300px;
+   width: 83.5%;
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   margin-left: 240px;
+
+   
+  
+ }
+
+ #slides {
+  width: 100%;
+   display: flex;
+   flex: 33 33 33;
+   transition: transform 0.5s ease-in-out;
+ }
+
+ .slide {
+   width: 100%;
+   flex: 0 0 100%;
+   background-size: cover;
+   object-fit: cover;
+ }
+ .slide img{
+   height: 220px;
+   width: 100%;
+     object-fit: cover;
+ }
+
+ #prev, #next {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 24px;
+   cursor: pointer;
+   color: #fff;
+   background-color: #333;
+   border: none;
+   padding: 10px;
+ }
+
+ #prev {
+   left: 10px;
+   display: none;
+ }
+
+ #next {
+   right: 10px;
+   display: none;
+ }
+
+ .head-info {
+   width: 83.5%;
+   height: 65px;
+   background-color: #fff;
+   position: absolute;
+   display: flex;
+   top: 20%;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px;
+   margin-left: 240px;
+}
+.name {
+   padding-left: 20px;
+}
+.name h2{
+   text-align: center;
+   font-size: 35px;
+   font-weight: 500;
+   color: gainsboro;
+}
+.left-side {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 20px
+   ;
+}
+.text {
+}
+.rating {
+   width: 75px;
+   height: 65px;
+   background-color: rgb(255, 35, 144);
+   align-items: center;
+   text-align: center;
+}
+.rating h4{
+   font-size: 20px;
+   text-align: center;
+   padding-top: 10px;
+   color: #fff;
+   font-weight: 300;
+}
+.rating p{
+   font-size: 10px;
+   color: #fff;
+}
+.text a{
+   color: rgb(255, 35, 144);
+   font-size: 15px;
+}
+
+.card{
+  position: absolute;
+  width: 83.5%;
+  height: 100vh;
+  display: flex;
+  top: 26%;
+  margin-left: 240px;
+  padding: 20px;
+  background: #f7f1f1;
+   box-shadow: inset 0 0 10px #808080; 
+
+}
+.card .left-content{
+  width: 60%;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: inset 5 5 10px #808080; 
+}
+.card hr{
+  width: 100%;
+  color: #808080;
+  height: 1px;
+}
+.card .left-content p{
+  font-size: 15px;
+}
+.card .left-content p:nth-child(2){
+   margin-top: 30px;
+   margin-bottom: 20px;
+  
+}
+.card .table{
+  width: 100%;
+   border: none;
+}
+.line1{
+  width: 100%;
+  height: 0.5px;
+  border: 0.2px solid gray;
+  margin-bottom: 20px;
+}
+.line2{
+  width: 100%;
+  height: 1px;
+  color: gray;
+  border: 0.2px solid gray;
+  margin-top: 20px;
+}
+.customer{
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   justify-content: space-between;
+}
+
+.cus-img {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.cus-img div{
+   height: 45px;
+   width: 45px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 50%;
+   border: 2px solid #efefef;
+   position: relative;
+   margin-left: -15px;
+}
+.customer .text{
+   margin-top: 40px;
+}
+
+.right-content{
+   width: 40%;
+   background-color: #fff;
+   
+
+}
+.emp1{
+   width: 250px;
+   height: 300px;
+   padding: 25px;
+   background: #fff;
+   margin-left: 50px;
+   box-shadow: inset 5 5 10px #808080; 
+
+}
+.emp1 img{
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+}
+.emp2{
+   width: 250px;
+   height: 300px;
+   padding: 25px;
+   background: #fff;
+   margin-left: 50px;
+   margin-top: 30px;
+   box-shadow: inset 5 5 10px #808080; 
+
+}
+
+.emp2 img{
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+}
+
+.emp-info{
+   display: flex;
+   margin-top: 20px;
+}
+.emp-info .name-field{
+   margin-left: 10px;
+}
+.emp-info .name-field h6{
+   font-size: 10px;
+}
+.emp-info .name-field p{
+   font-size: 10px;
+}
+.emp-info .c-rating{
+  margin-left: 10px;
+  color: rgb(255, 35, 144);
+}
+/* Common styles for all screen sizes */
+
+/* ... Your existing styles ... */
+
+/* Media Query for Maximum Width 400px */
+@media only screen and (max-width: 400px) {
+   .nav {
+        /* Hide the navigation on smaller screens */
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+   }
+   .nav .user{
+      display: none;
+   }
+   .nav .left-content{
+      display: none;
+   }
+   .nav .search-bar{
+      width: 100px;
+   }
+   .nav .search-bar input{
+       width: 120px;
+       margin-right: 30px;
+   }
+   .main-content{
+      
+   }
+
+   .main-container {
+       padding: 1rem;
+       padding-right: 1.3rem;
+       height: 272vh;
+   }
+
+   .sidebar {
+       display: none; /* Hide the sidebar on smaller screens */
+   }
+
+   #slider-container {
+       margin-left: 0;
+       width: 100%;
+   }
+
+   #prev,
+   #next {
+       display: none;
+   }
+
+   .head-info {
+       top: 11.1%;
+       margin-left: 0;
+       width: 100%;
+   }
+   .head-info .name h2{
+      font-size: 18px;
+   }
+
+   .card {
+       top: 14.4%;
+       width: 100%;
+       height: 210vh;
+       margin-left: 0;
+       padding: 10px;
+       display: flex;
+       flex-direction: column;
+   }
+
+   .card .left-content{
+      width: 100%;
+      height: 100vh;
+   }
+   .card .left-content .table{
+      font-size: 10px;
+      column-span: 1;
+   }
+   .card .right-content {
+       width: 400px;
+       height: 25vh;
+       padding: 0;
+       
+       margin-left: 0;
+   }
+   .left-content p{
+      font-size: 1px;
+   }
+
+   .emp1,
+   .emp2 {
+       width: 100%;
+       margin-left: 0;
+       margin-top: 15px;
+   }
+
+   .emp-info {
+       flex-direction: column;
+       align-items: center;
+   }
+   .s-text{
+      width: 100%;
+   }
+
+   .main-content {
+       padding-top: 70px; /* Adjusted padding to accommodate the hidden navigation */
+   }
+
+   .name h2 {
+       font-size: 28px; /* Adjusted font size for the hotel name */
+   }
+
+   .rating h4 {
+       font-size: 16px; /* Adjusted font size for the rating */
+       padding-top: 5px;
+   }
+
+   .rating p {
+       font-size: 8px; /* Adjusted font size for the votes */
+   }
+
+   .text a {
+       font-size: 12px; /* Adjusted font size for the location link */
+   }
+
+   .card .left-content p {
+       font-size: 14px; /* Adjusted font size for the card content */
+   }
+   .card .left-content .customer{
+      height: 2rem;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .customer .text {
+       margin-top: 20px; /* Adjusted margin for the customer text */
+   }
+
+   .customer .cus-img div {
+       height: 35px;
+       width: 35px;
+   }
+}
+
+
+
